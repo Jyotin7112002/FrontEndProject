@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplify Practice Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="https://s3-alpha-sig.figma.com/img/25d9/0f3e/10db81e99db1f8f6839a8966b5736321?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rQnmqtyUXhEbjUxHg51nd6a1RcNtlRu79cOuOTq5E6pBZ9KpP4svbE~s7us34ZD0M2nlutrpb1WWd8Zaen6ysJ4O2P736x2qW2fCxmoSYUxL5rKx0P~DXndJjs3PTiQy1Cxda4qJjtjfH8Up3KgMr4JpSz-JeZDltCp-jTe2pNvAePl4p6oNvtSwwHMtj-3iaeEAteVcjoUhKwR5LMeEGlko~muA4aoS0VPMV1VzcAXs7E-SUOoTflJk0DxSion3TfVH3EpVW-wKD1zN12MjOmQ0bm~MZ5MtevL-42aGJet3AnAAR2g0GUJgi5JrvMQTfziigKz3vz3-Nqe77jekJA__" alt="Simplify Practice Logo">
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="active">
+                    <i class="fas fa-th"></i>
+                    <span>Dashboard</span>
+                    <i class="fas fa-chevron-up"></i>
+                </li>
+                <li>
+                    <i class="fas fa-tasks"></i>
+                    <span>PM</span>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
+                <li>
+                    <i class="fas fa-users"></i>
+                    <span>CRM</span>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header>
+                <h1>Simplify Practice</h1>
+                <div class="user-info">
+                    <div class="notification">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">1</span>
+                    </div>
+                    <div class="user">
+                        <img src="https://s3-alpha-sig.figma.com/img/51ed/a9f0/9e0be3d2136a17d34bc45374f12d3b66?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=jv5J4MjKU5xMMw1MoYUAdvZb~6pbI4IzYMS80OxjMBc6nN2IEi47UqK5wtFitDFmU1wlFbbu4hmQAeln5iZ63jFG~pYdS3sfGoY7u-OUkLqljRFnkO3eneAlyw2m6Wbjanp3nGn1~WoUnJ1Dp0InMQiUVGf9AN0XHu4jtVtFgLuwmX9ctYgB8N3JtvbNioF9MZ2JsOiHLcgQYTIpP3baS4BYfWn98ufgnuX8XQjoeZuI8KkYIfgi59PWnSXFGDf7NUsb623KxicA29iQw6GQoc86yLFhCpl0ixN3VLC0Is1kHhsucTMK1Tn5dz~~QxuES-WvVXvVsHklDdJUzvZanQ__" alt="User Avatar">
+                        <span>Kajal Singania</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <h2>Dashboard</h2>
+
+                <div class="dashboard-grid">
+                    <!-- Activity Status -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><strong>Activity Status</strong> <span>(74)</span></h3>
+                            <a href="#" class="view-all">View all</a>
+                        </div>
+                        <div class="card-body">
+                            <ul class="activity-list">
+                                <li>
+                                    <div class="activity-icon overdue">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <span class="activity-name">Overdue</span>
+                                    <span class="activity-count">25</span>
+                                </li>
+                                <li>
+                                    <div class="activity-icon today">
+                                        <i class="fas fa-calendar-day"></i>
+                                    </div>
+                                    <span class="activity-name">Today</span>
+                                    <span class="activity-count">02</span>
+                                </li>
+                                <li>
+                                    <div class="activity-icon ticket">
+                                        <i class="fas fa-ticket-alt"></i>
+                                    </div>
+                                    <span class="activity-name">Ticket</span>
+                                    <span class="activity-count">20</span>
+                                </li>
+                                <li>
+                                    <div class="activity-icon critical">
+                                        <i class="fas fa-exclamation"></i>
+                                    </div>
+                                    <span class="activity-name">Critical</span>
+                                    <span class="activity-count">15</span>
+                                </li>
+                                <li>
+                                    <div class="activity-icon assigned">
+                                        <i class="fas fa-user-check"></i>
+                                    </div>
+                                    <span class="activity-name">Assigned by me</span>
+                                    <span class="activity-count">12</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Assignment -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><strong>Assignment</strong> <span>(03)</span></h3>
+                            <a href="#" class="view-all">View all</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-header">
+                                <span class="col-project">Projects</span>
+                                <span class="col-assigned">Assigned</span>
+                                <span class="col-overdue">Overdue</span>
+                            </div>
+                            <ul class="assignment-list">
+                                <li>
+                                    <div class="col-project">
+                                        <img src="https://s3-alpha-sig.figma.com/img/1338/eb83/b129c94e1fe53eefc2dc6986cca05740?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Zjh8TmxkkK6NmXXsHJ1~JpINgpQgHvV0LNr0LZQlQ2zZ2ZD1zSM-DmRWz7BjsWjIUYToiJX~Q~9Vswaip2RId1ee3rnxGZWkSeU0oCgJgMDCFEBK3LBii74tenkl6KIQ4qASvHHARczBH4J4wzRc5q8ByFAdvSsi2z8nvgl-iE6wozDZjd-EwFzb9gQ~I2pjUQUSp~xqoJeSEV1avUzZuVOPbK6ODHPsPx1-kEaEPWpLLS1vYUMqEHC98Amvd2cKQEQtKJPIUGiy2z5vI8RpoEwRaIJ6W0X2x2C2j7ue~nPhDZf0-KGlNb2DghHdMJWdUcmIVGykzik6sViMXynAWQ__" alt="User Avatar">
+                                        <span>EkatnERP - Production support</span>
+                                    </div>
+                                    <span class="col-assigned">449</span>
+                                    <span class="col-overdue">100%</span>
+                                </li>
+                                <li>
+                                    <div class="col-project">
+                                        <img src="https://s3-alpha-sig.figma.com/img/1338/eb83/b129c94e1fe53eefc2dc6986cca05740?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Zjh8TmxkkK6NmXXsHJ1~JpINgpQgHvV0LNr0LZQlQ2zZ2ZD1zSM-DmRWz7BjsWjIUYToiJX~Q~9Vswaip2RId1ee3rnxGZWkSeU0oCgJgMDCFEBK3LBii74tenkl6KIQ4qASvHHARczBH4J4wzRc5q8ByFAdvSsi2z8nvgl-iE6wozDZjd-EwFzb9gQ~I2pjUQUSp~xqoJeSEV1avUzZuVOPbK6ODHPsPx1-kEaEPWpLLS1vYUMqEHC98Amvd2cKQEQtKJPIUGiy2z5vI8RpoEwRaIJ6W0X2x2C2j7ue~nPhDZf0-KGlNb2DghHdMJWdUcmIVGykzik6sViMXynAWQ__" alt="User Avatar">
+                                        <span>EkatnERP - Production support</span>
+                                    </div>
+                                    <span class="col-assigned">449</span>
+                                    <span class="col-overdue">100%</span>
+                                </li>
+                                <li>
+                                    <div class="col-project">
+                                        <img src="https://s3-alpha-sig.figma.com/img/1338/eb83/b129c94e1fe53eefc2dc6986cca05740?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Zjh8TmxkkK6NmXXsHJ1~JpINgpQgHvV0LNr0LZQlQ2zZ2ZD1zSM-DmRWz7BjsWjIUYToiJX~Q~9Vswaip2RId1ee3rnxGZWkSeU0oCgJgMDCFEBK3LBii74tenkl6KIQ4qASvHHARczBH4J4wzRc5q8ByFAdvSsi2z8nvgl-iE6wozDZjd-EwFzb9gQ~I2pjUQUSp~xqoJeSEV1avUzZuVOPbK6ODHPsPx1-kEaEPWpLLS1vYUMqEHC98Amvd2cKQEQtKJPIUGiy2z5vI8RpoEwRaIJ6W0X2x2C2j7ue~nPhDZf0-KGlNb2DghHdMJWdUcmIVGykzik6sViMXynAWQ__" alt="User Avatar">
+                                        <span>EkatnERP - Production support</span>
+                                    </div>
+                                    <span class="col-assigned">449</span>
+                                    <span class="col-overdue">100%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Report -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><strong>Report</strong> <span>(03)</span></h3>
+                            <a href="#" class="view-all">View all</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-header">
+                                <span class="col-name">Name</span>
+                                <span class="col-overdue">Overdue</span>
+                                <span class="col-total">Total</span>
+                            </div>
+                            <ul class="report-list">
+                                <li>
+                                    <div class="col-name">
+                                        <img src="https://s3-alpha-sig.figma.com/img/0f32/c2e9/7aead7b8be040553a15c69f051c34f26?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HU36hXpX305zhsmynKvq9Qwl944urx-A5sRBRNiWVcs-Qpql9U~ESpQ4eNxkrV-lTcpJCXS0p64KpX6WE5S~6q3e0tgLRx8pYXh01puE0uAHxaPYdwIOk4KQJpYPB8xOmC8w6IBV2RTg6rzGo8CmSdpYvFLOBiDRxYImk72PjdcYQ3QpoI4uOVMEgBIv8ka~E~DW6LitRVDLYT4T3F6H6ppnsFi7gg4I8ibuSLU2B4ZKH8qU6VhxQDaCRTu8abAhwRZQhAjmlGoP5CjTh8r0W5SmPmwZ0KPD5W5-YYpJJHNjUf3qSOgzulLffknSffpwrT0XvYRhuw~j03FpGTQiQQ__" alt="User Avatar">
+                                        <span>Amay Gurjar</span>
+                                    </div>
+                                    <span class="col-overdue">20</span>
+                                    <span class="col-total">25</span>
+                                </li>
+                                <li>
+                                    <div class="col-name">
+                                        <img src="https://s3-alpha-sig.figma.com/img/0f32/c2e9/7aead7b8be040553a15c69f051c34f26?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HU36hXpX305zhsmynKvq9Qwl944urx-A5sRBRNiWVcs-Qpql9U~ESpQ4eNxkrV-lTcpJCXS0p64KpX6WE5S~6q3e0tgLRx8pYXh01puE0uAHxaPYdwIOk4KQJpYPB8xOmC8w6IBV2RTg6rzGo8CmSdpYvFLOBiDRxYImk72PjdcYQ3QpoI4uOVMEgBIv8ka~E~DW6LitRVDLYT4T3F6H6ppnsFi7gg4I8ibuSLU2B4ZKH8qU6VhxQDaCRTu8abAhwRZQhAjmlGoP5CjTh8r0W5SmPmwZ0KPD5W5-YYpJJHNjUf3qSOgzulLffknSffpwrT0XvYRhuw~j03FpGTQiQQ__" alt="User Avatar">
+                                        <span>Amay Gurjar</span>
+                                    </div>
+                                    <span class="col-overdue">20</span>
+                                    <span class="col-total">25</span>
+                                </li>
+                                <li>
+                                    <div class="col-name">
+                                        <img src="https://s3-alpha-sig.figma.com/img/0f32/c2e9/7aead7b8be040553a15c69f051c34f26?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HU36hXpX305zhsmynKvq9Qwl944urx-A5sRBRNiWVcs-Qpql9U~ESpQ4eNxkrV-lTcpJCXS0p64KpX6WE5S~6q3e0tgLRx8pYXh01puE0uAHxaPYdwIOk4KQJpYPB8xOmC8w6IBV2RTg6rzGo8CmSdpYvFLOBiDRxYImk72PjdcYQ3QpoI4uOVMEgBIv8ka~E~DW6LitRVDLYT4T3F6H6ppnsFi7gg4I8ibuSLU2B4ZKH8qU6VhxQDaCRTu8abAhwRZQhAjmlGoP5CjTh8r0W5SmPmwZ0KPD5W5-YYpJJHNjUf3qSOgzulLffknSffpwrT0XvYRhuw~j03FpGTQiQQ__" alt="User Avatar">
+                                        <span>Amay Gurjar</span>
+                                    </div>
+                                    <span class="col-overdue">20</span>
+                                    <span class="col-total">25</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Clients -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><strong>Clients</strong> <span>(03)</span></h3>
+                            <a href="#" class="view-all">View all</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-header">
+                                <span class="col-project">Projects</span>
+                                <span class="col-assigned">Assigned</span>
+                                <span class="col-overdue">Overdue</span>
+                            </div>
+                            <ul class="clients-list">
+                                <li>
+                                    <div class="col-project">
+                                        <img src="https://s3-alpha-sig.figma.com/img/1338/eb83/b129c94e1fe53eefc2dc6986cca05740?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Zjh8TmxkkK6NmXXsHJ1~JpINgpQgHvV0LNr0LZQlQ2zZ2ZD1zSM-DmRWz7BjsWjIUYToiJX~Q~9Vswaip2RId1ee3rnxGZWkSeU0oCgJgMDCFEBK3LBii74tenkl6KIQ4qASvHHARczBH4J4wzRc5q8ByFAdvSsi2z8nvgl-iE6wozDZjd-EwFzb9gQ~I2pjUQUSp~xqoJeSEV1avUzZuVOPbK6ODHPsPx1-kEaEPWpLLS1vYUMqEHC98Amvd2cKQEQtKJPIUGiy2z5vI8RpoEwRaIJ6W0X2x2C2j7ue~nPhDZf0-KGlNb2DghHdMJWdUcmIVGykzik6sViMXynAWQ__" alt="User Avatar">
+                                        <span>Santhosh harish & Co, C</span>
+                                    </div>
+                                    <span class="col-assigned">449</span>
+                                    <span class="col-overdue">100%</span>
+                                </li>
+                                <li>
+                                    <div class="col-project">
+                                        <img src="https://s3-alpha-sig.figma.com/img/1338/eb83/b129c94e1fe53eefc2dc6986cca05740?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Zjh8TmxkkK6NmXXsHJ1~JpINgpQgHvV0LNr0LZQlQ2zZ2ZD1zSM-DmRWz7BjsWjIUYToiJX~Q~9Vswaip2RId1ee3rnxGZWkSeU0oCgJgMDCFEBK3LBii74tenkl6KIQ4qASvHHARczBH4J4wzRc5q8ByFAdvSsi2z8nvgl-iE6wozDZjd-EwFzb9gQ~I2pjUQUSp~xqoJeSEV1avUzZuVOPbK6ODHPsPx1-kEaEPWpLLS1vYUMqEHC98Amvd2cKQEQtKJPIUGiy2z5vI8RpoEwRaIJ6W0X2x2C2j7ue~nPhDZf0-KGlNb2DghHdMJWdUcmIVGykzik6sViMXynAWQ__" alt="User Avatar">
+                                        <span>EkatnERP - Production support</span>
+                                    </div>
+                                    <span class="col-assigned">449</span>
+                                    <span class="col-overdue">100%</span>
+                                </li>
+                                <li>
+                                    <div class="col-project">
+                                        <img src="https://s3-alpha-sig.figma.com/img/1338/eb83/b129c94e1fe53eefc2dc6986cca05740?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Zjh8TmxkkK6NmXXsHJ1~JpINgpQgHvV0LNr0LZQlQ2zZ2ZD1zSM-DmRWz7BjsWjIUYToiJX~Q~9Vswaip2RId1ee3rnxGZWkSeU0oCgJgMDCFEBK3LBii74tenkl6KIQ4qASvHHARczBH4J4wzRc5q8ByFAdvSsi2z8nvgl-iE6wozDZjd-EwFzb9gQ~I2pjUQUSp~xqoJeSEV1avUzZuVOPbK6ODHPsPx1-kEaEPWpLLS1vYUMqEHC98Amvd2cKQEQtKJPIUGiy2z5vI8RpoEwRaIJ6W0X2x2C2j7ue~nPhDZf0-KGlNb2DghHdMJWdUcmIVGykzik6sViMXynAWQ__" alt="User Avatar">
+                                        <span>EkatnERP - Production support</span>
+                                    </div>
+                                    <span class="col-assigned">449</span>
+                                    <span class="col-overdue">100%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Due Date Information -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><strong>Due Date Information</strong> <span>(03)</span></h3>
+                            <a href="#" class="view-all">View all</a>
+                        </div>
+                        <div class="card-body">
+                            <ul class="due-date-list">
+                                <li>
+                                    <div class="due-date-icon">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="due-date-info">
+                                        <div class="form-name">Form MSME</div>
+                                        <div class="date-range">20/03/2024 To 20/03/2024</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="due-date-icon">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="due-date-info">
+                                        <div class="form-name">Form MSME</div>
+                                        <div class="date-range">20/03/2024 To 20/03/2024</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="due-date-icon">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="due-date-info">
+                                        <div class="form-name">Form MSME</div>
+                                        <div class="date-range">20/03/2024</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="last-row-wrapper">
+                        <!-- Meetings -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3><strong>Meetings</strong> <span>(0)</span></h3>
+                                <a href="#" class="view-all">View all</a>
+                            </div>
+                            <div class="card-body empty-card">
+                                <div class="no-data">
+                                    <img src="https://s3-alpha-sig.figma.com/img/f49c/07b0/22249214366902ea46d6b8c920b27264?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mZcqby5PTNEvijAUJt8Bhmbe7LAXcdmXStLo7MEFN0ni5ZPREUMF-r91RoFHC7-76psHwXu6irJy7rrU~adWS0aCikwvimlCJUTrVlHdyVCQZLGlVvtax6p3X-W04AtwOg0X8wgPdaN~MuBks2032vX9oYwD5NuwuHLBzEyJWC~52t7wDBxM9B3BZeO2C-nZqQWC8g5JKzK8eeHqMyYhiySo0~UfAr2t0BWoBOP66LVlFbXQyBQU5H7O0uu~NP2OuZkxPGHcgwH~wzpwbD5-Fcj7C2qg5LalHMQ6z0qC-lSFP1pDrIFUeTlIz9cx5p0XxjxoxmBPX1COCV6OUmolxQ__" alt="No Data">
+                                    <p>No Data</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feedback -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3><strong>Feedback</strong> <span>(0)</span></h3>
+                                <a href="#" class="view-all">View all</a>
+                            </div>
+                            <div class="card-body empty-card">
+                                <div class="no-data">
+                                    <img src="https://s3-alpha-sig.figma.com/img/f49c/07b0/22249214366902ea46d6b8c920b27264?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mZcqby5PTNEvijAUJt8Bhmbe7LAXcdmXStLo7MEFN0ni5ZPREUMF-r91RoFHC7-76psHwXu6irJy7rrU~adWS0aCikwvimlCJUTrVlHdyVCQZLGlVvtax6p3X-W04AtwOg0X8wgPdaN~MuBks2032vX9oYwD5NuwuHLBzEyJWC~52t7wDBxM9B3BZeO2C-nZqQWC8g5JKzK8eeHqMyYhiySo0~UfAr2t0BWoBOP66LVlFbXQyBQU5H7O0uu~NP2OuZkxPGHcgwH~wzpwbD5-Fcj7C2qg5LalHMQ6z0qC-lSFP1pDrIFUeTlIz9cx5p0XxjxoxmBPX1COCV6OUmolxQ__" alt="No Data">
+                                    <p>No Data</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

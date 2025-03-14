@@ -1,0 +1,467 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 220px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-top {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.menu-toggle {
+    font-size: 20px;
+    color: #0066cc;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #666;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-menu li.active {
+    background-color: #0066cc;
+    color: white;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 12px 15px;
+}
+
+.nav-menu li i:first-child {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.nav-menu li i:last-child {
+    position: absolute;
+    right: 20px;
+}
+
+.nav-menu li.active i:last-child {
+    right: 15px;
+}
+
+.nav-menu li span {
+    flex-grow: 1;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+header h1 {
+    color: #0066cc;
+    font-size: 24px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.notification {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.notification i {
+    color: #666;
+    font-size: 18px;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 15px 5px 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user span {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+/* Dashboard Content Styles */
+.dashboard-content {
+    padding: 20px 0;
+}
+
+.dashboard-content h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+}
+
+/* First four cards (2x2 grid) */
+.dashboard-grid > div:nth-child(1),
+.dashboard-grid > div:nth-child(3) {
+    grid-column: 1;
+}
+
+.dashboard-grid > div:nth-child(2),
+.dashboard-grid > div:nth-child(4) {
+    grid-column: 2;
+}
+
+/* Last row with three cards */
+.dashboard-grid > div:nth-child(5),
+.dashboard-grid > .last-row-wrapper {
+    grid-row: 3;
+}
+
+.dashboard-grid > div:nth-child(5) {
+    grid-column: 1;
+}
+
+.dashboard-grid > .last-row-wrapper {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-row-wrapper > .card {
+    width: 49%;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f9f9f9;
+}
+
+.card-header h3 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.card-header h3 strong {
+    font-weight: 700;
+}
+
+.card-header h3 span {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.view-all {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.card-body {
+    padding: 15px 20px;
+}
+
+/* Activity List Styles */
+.activity-list {
+    list-style: none;
+}
+
+.activity-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.activity-list li:last-child {
+    border-bottom: none;
+}
+
+.activity-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: white;
+}
+
+.activity-icon.overdue {
+    background-color: #ff6b6b;
+}
+
+.activity-icon.today {
+    background-color: #4dabf7;
+}
+
+.activity-icon.ticket {
+    background-color: #9775fa;
+}
+
+.activity-icon.critical {
+    background-color: #ffa94d;
+}
+
+.activity-icon.assigned {
+    background-color: #69db7c;
+}
+
+.activity-name {
+    flex-grow: 1;
+    color: #333;
+}
+
+.activity-count {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Table Header Styles */
+.table-header {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #666;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+.col-project, .col-name {
+    flex: 2;
+}
+
+.col-assigned, .col-overdue, .col-total {
+    flex: 1;
+    text-align: center;
+}
+
+/* Assignment List Styles */
+.assignment-list, .report-list, .clients-list {
+    list-style: none;
+}
+
+.assignment-list li, .report-list li, .clients-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.assignment-list li:last-child, .report-list li:last-child, .clients-list li:last-child {
+    border-bottom: none;
+}
+
+.col-project, .col-name {
+    display: flex;
+    align-items: center;
+    flex: 2;
+}
+
+.col-project img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.col-name img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+/* Specifically target the report section profile images */
+.report-list .col-name img {
+    width: 35px;
+    height: 35px;
+}
+
+.col-project span, .col-name span {
+    font-size: 14px;
+    color: #333;
+}
+
+.col-assigned, .col-overdue, .col-total {
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Due Date List Styles */
+.due-date-list {
+    list-style: none;
+}
+
+.due-date-list li {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.due-date-list li:last-child {
+    border-bottom: none;
+}
+
+.due-date-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #4dabf7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: white;
+}
+
+.due-date-info {
+    flex-grow: 1;
+}
+
+.form-name {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.date-range {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Empty Card Styles */
+.empty-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+
+.no-data {
+    text-align: center;
+}
+
+.no-data img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.no-data p {
+    color: #666;
+    font-size: 14px;
+} 
